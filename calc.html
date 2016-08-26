@@ -1,0 +1,126 @@
+<html>
+<head>
+<meta http-equiv="content-type|default-style|refresh" charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+<title></title>
+<style>
+html,
+body,
+form,
+table {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  font-family: PingFangHK-Light, PingFangHK;
+  color: #444;
+  font-weight: 200;
+  position: fixed;
+  background: #eee;
+  border: 1px solid #eee;
+}
+
+td {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.05);
+}
+
+tr {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#str {
+  margin: 0px;
+  padding: 0px;
+}
+
+#std {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+#std input {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-family: PingFangHK-Light, PingFangHK;
+  font-weight: 200;
+}
+
+#btr {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 15%;
+  text-align: center;
+}
+
+#btd {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 15%;
+  text-align: center;
+}
+
+#btd button {
+  margin: 6px;
+  padding: 0px;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 14px;
+  color: #999;
+  font-size: 20px;
+  font-family: PingFangHK-Light, PingFangHK;
+  text-align: center;
+  font-weight: 200;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+<body>
+
+<form name="Calc">
+<table border=0>
+<tr id="str" style="height: 25%;">
+<td id="std" style="height: 25%;">
+<input style="color: #999;
+font-size: 20px; width: 100%; height: 25%; background: #f6f6f6; border-color: rgba(0,0,0,0.05); border-radius: 0px;" type="text"   name="Input" size="">
+</td>
+</tr>
+<tr id="btr" style="height: 75%;">
+<td id="btd" style="height: 75%;">
+<br>
+<button style="width: 80px; height: 80px;" type="button" name="one"   value="  1  " onclick="Calc.Input.value += '1'">1</button>
+<button style="width: 80px; height: 80px;" type="button" name="two"   value="  2  " onclick="Calc.Input.value += '2'">2</button>
+<button style="width: 80px; height: 80px;" type="button" name="three" value="  3  " onclick="Calc.Input.value += '3'">3</button>
+<button style="width: 80px; height: 80px;" type="button" name="plus"  value="  +  " onclick="Calc.Input.value += ' + '">+</button>
+<br>
+<button style="width: 80px; height: 80px;" type="button" name="four"  value="  4  " onclick="Calc.Input.value += '4'">4</button>
+<button style="width: 80px; height: 80px;" type="button" name="five"  value="  5  " onclick="Calc.Input.value += '5'">5</button>
+<button style="width: 80px; height: 80px;" type="button" name="six"   value="  6  " onclick="Calc.Input.value += '6'">6</button>
+<button style="width: 80px; height: 80px;" type="button" name="minus" value="  -  " onclick="Calc.Input.value += ' - '">-</button>
+<br>
+<button style="width: 80px; height: 80px;" type="button" name="seven" value="  7  " onclick="Calc.Input.value += '7'">7</button>
+<button style="width: 80px; height: 80px;" type="button" name="eight" value="  8  " onclick="Calc.Input.value += '8'">8</button>
+<button style="width: 80px; height: 80px;" type="button" name="nine"  value="  9  " onclick="Calc.Input.value += '9'">9</button>
+<button style="width: 80px; height: 80px;" type="button" name="times" value="  x  " onclick="Calc.Input.value += ' * '">x</button>
+<br>
+<button style="width: 80px; height: 80px;" type="button" name="clear" value="  c  " onclick="Calc.Input.value = ''">c</button>
+<button style="width: 80px; height: 80px;" type="button" name="zero"  value="  0  " onclick="Calc.Input.value += '0'">0</button>
+<button style="width: 80px; height: 80px;" type="button" name="DoIt"  value="  =  " onclick="Calc.Input.value = eval(Calc.Input.value)">=</button>
+<button style="width: 80px; height: 80px;" type="button" name="div"   value="  /  " onclick="Calc.Input.value += ' / '">/</button>
+<br>
+</td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
